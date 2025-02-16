@@ -5,6 +5,8 @@ gem "rails", "~> 8.0.1"
 # Bootstrap Bullshit
 gem "dartsass-rails"
 gem "bootstrap"
+# Bcrypt Bullshit
+gem "bcrypt"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use postgresql as the database for Active Record
