@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   post      "/login",       to: "sessions#create"
   get       "/logout",      to: "sessions#destroy"
   get       "/newslot",     to: "timeslots#new"
-  resources :users, :timeslots
+  get       "/timeslots",   to: "timeslots#index"
+  resources :users, :timeslots, :bookings
 end

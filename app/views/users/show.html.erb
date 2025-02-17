@@ -1,2 +1,18 @@
-<h1>It's you!</h1>
-<%= @user.email %>
+<h1>Your Profile</h1>
+<%= @user.email %><br><br>
+
+<div class="col-md-8">
+    <% if @user.bookings.any? %>
+        <h3>Bookings</h3>
+        <ol class="bookings">
+            <%= @user.bookings.each do |booking| %>
+                <li>
+                    <%= link_to "View", booking %>
+                    <p>Table: <%= booking.table %></p>
+                    <p>Date and Time: <%= booking.datetime %></p>
+                    <p>Guests: <%= booking.guests %></p>
+                </li>
+            <% end %>
+        </ol>
+    <% end %>
+</div>

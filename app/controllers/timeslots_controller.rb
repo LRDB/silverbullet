@@ -10,6 +10,7 @@ class TimeslotsController < ApplicationController
 
   def index
     @timeslot = Timeslot.all
+    @booking = current_user.bookings.build if logged_in?
   end
 
   def create

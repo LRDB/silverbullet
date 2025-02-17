@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  email: MyString
+  table: 1
+  datetime: 2025-02-17 12:54:02
+  guests: 1
+
+two:
+  user: two
+  email: MyString
+  table: 1
+  datetime: 2025-02-17 12:54:02
+  guests: 1

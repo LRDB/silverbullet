@@ -1,0 +1,15 @@
+<%= form_for(@booking) do |f| %>
+    <%= f.label :email %><br>
+    <%= f.email_field :email, value: current_user.email %><br>
+
+    <%= f.label :table %><br>
+    <%= f.number_field :table %><br>
+
+    <%= f.label :datetime, "Date and Time" %><br>
+    <%= f.datetime_field :datetime %><br>
+
+    <%= f.label :guests %><br>
+    <%= f.number_field :guests %><br><br>
+
+    <%= f.submit "Book", class: "btn btn-primary" %><br>
+<% end %>
