@@ -1,0 +1,13 @@
+<h1>All Timeslots</h1>
+<ul class="timeslots">
+    <% @timeslot.each do |timeslot| %>
+            <% if available? timeslot %>
+                <li>
+                <p>Table <%= timeslot.table %></p>
+                <p>Date and Time: <%= timeslot.datetime %></p>
+                <p>Capacity: <%= timeslot.capacity %></p>
+                </li>
+            <% else %>
+            <% end %>
+    <% end %>
+</ul>
