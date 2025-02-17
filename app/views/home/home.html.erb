@@ -1,6 +1,12 @@
 <div class="center jumobotron">
     <h1>Booktable</h1>
     <p>Book a table with Booktable.</p>
-    <%= link_to "Sign Up", signup_path, class: "btn btn-lg btn-primary" %><br><br>
+    
+    <% if logged_in? %>
+        <%= link_to "Start Booking", "#", class: "btn btn-lg btn-primary" %><br><br>
+    <% else %>
+        <%= link_to "Sign Up", signup_path, class: "btn btn-lg btn-primary" %><br><br>
+    <% end %>
+
     <%= link_to image_tag("booktable.png", alt: "Booktable Logo", width: "200px"), "#" %>
 </div>
